@@ -1,6 +1,5 @@
 import type { ColumnConfig } from '@/types/components';
-import type { Bill } from '@/types/domain/bill';
-import format from 'date-fns/format';
+import type { Bill } from '@/types/domain/bill'; 
 
 export const billColumns: ColumnConfig<Bill>[] = [
   {
@@ -13,7 +12,12 @@ export const billColumns: ColumnConfig<Bill>[] = [
     key: 'referenceMonth',
     label: 'Mês',
     align: 'left',
-    customRender: row => (row?.referenceMonth ? format(new Date(row.referenceMonth), 'MM/yy') : null)
+    customRender: row => {
+      if (!row?.referenceMonth) return null;
+    
+      const [year, month] = row.referenceMonth.split('-'); 
+      return `${month}/${year.slice(2)}`; 
+    }
   },
   {
     key: 'customerId',
