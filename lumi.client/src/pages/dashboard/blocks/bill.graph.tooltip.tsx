@@ -8,7 +8,7 @@ const labelMap: Record<string, string> = {
   totalCost: 'Custo Total (R$)'
 };
 
-export const CustomTooltip = ({ active, payload, label }: { active: boolean; payload: unknown[]; label: string | number }) => {
+export const CustomTooltip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null;
 
   return (
