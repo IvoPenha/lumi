@@ -43,7 +43,7 @@ export const billColumns: ColumnConfig<Bill>[] = [
   },
   {
     key: 'economyWithCompensation',
-    label: 'Saldo de créditos (kWh)',
+    label: 'economia com compensação (kWh)',
     align: 'center',
     customRender: row => <div className="text-center">{Number(row.economyWithCompensation).toFixed(3)}</div>
   }

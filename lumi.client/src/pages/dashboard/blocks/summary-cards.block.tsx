@@ -26,7 +26,7 @@ const SummaryCardsSection: React.FC<SummaryCardsSectionProps> = ({ queryParams }
 
   const cardsData = [
     {
-      title: 'Geração',
+      title: 'Total Gerado',
       value: apiData?.generation?.value?.toLocaleString(),
       unit: apiData?.generation?.unit,
       variation: apiData?.generation?.variation,
@@ -34,7 +34,7 @@ const SummaryCardsSection: React.FC<SummaryCardsSectionProps> = ({ queryParams }
       loading
     },
     {
-      title: 'Compensação',
+      title: 'Total Compensado',
       value: apiData?.compensation?.value?.toLocaleString(),
       unit: apiData?.compensation?.unit,
       variation: apiData?.compensation?.variation,
@@ -42,7 +42,7 @@ const SummaryCardsSection: React.FC<SummaryCardsSectionProps> = ({ queryParams }
       loading
     },
     {
-      title: 'Saldo de créditos',
+      title: 'Total de Faturas',
       value: apiData?.balance?.value?.toLocaleString(),
       unit: apiData?.balance?.unit,
       variation: apiData?.balance?.variation,
