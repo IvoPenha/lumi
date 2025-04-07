@@ -9,7 +9,7 @@ services:
     env_file:
       - ./lumi.client/.env
     depends_on:
-      - backend
+      - server
 
   server:
     build: ./lumi.server
