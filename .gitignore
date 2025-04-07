@@ -2,6 +2,7 @@ lumi.client/.env
 lumi.client/.env.local
 lumi.client/.env.development.local
 lumi.client/node_modules
+lumi.client/dist
 lumi.client/build
 
 lumi.server/.env
