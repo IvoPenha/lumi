@@ -1,0 +1,12 @@
+lumi.client/.env
+lumi.client/.env.local
+lumi.client/.env.development.local
+lumi.client/node_modules
+lumi.client/build
+
+lumi.server/.env
+lumi.server/.env.local
+lumi.server/.env.development.local
+lumi.server/node_modules
+lumi.server/build
+lumi.server/dist
